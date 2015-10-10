@@ -2,9 +2,48 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Skills-HTML-CSS</title>
+        <title>Katie's Skills-HTML-CSS</title>
     </head>
     <body>
-        <!-- your html goes here -->
+        <form action="/application" method="POST">
+            <div>
+                <label> First Name
+                    <input type="text" name="first_name" placeholder="First name">
+                    <!-- Question for Meggie: where is it we're not supposed to use
+                        underscores? Is it here? -->
+                </label>
+            </div>
+            <div>
+                <label> Last Name
+                    <input type="text" name="last_name" placeholder="Last name">
+                </label>
+            </div>
+            <div>
+                <label> Minimum Salary
+                    <input type="number" name="min_salary" placeholder="$" min="0"
+                           step="1000" value="0">
+                   <!-- TODO: figure out if there's a way to get it to step in 1000-$
+                            increments but accept any random number (like, it turns red,
+                            but will the form submit anyway? Otherwise ask Meggie.) -->
+                    <!-- alternative is  <input type="text" name="min_salary" 
+                    placeholder="$" pattern="[\d]"> but doesn't work in Safari-->
+                    <!-- Is there a way to get it to revert to the default value
+                    when the page is reloaded? -->
+                </label>
+            </div>
+            <div>
+                <label> Desired Position
+                    <select>
+                        <option value="software_engineer">Software Engineer</option>
+                        <option value="qa_engineer">QA Engineer</option>
+                        <option value="product_manager">Product Manager</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Apply!">
+            </div>
+        </form>
+
     </body>
 </html>
