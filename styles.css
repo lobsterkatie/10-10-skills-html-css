@@ -1,1 +1,23 @@
-/*your CSS goes here*/
+body {
+    font-family: Courier;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select{
+    background-color: yellow;
+}
+
+#instructions {
+    border: 1px solid black;
+    display: inline-block;
+    /*text-align: center;*/
+    margin: 10px auto;
+    /*ARRRRGGGGGHHHHH why can't I center this $%&*@!$%^&# thing???*/
+}
+
+#lastname {
+    font-weight: bold;
+}

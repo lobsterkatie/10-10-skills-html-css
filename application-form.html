@@ -3,10 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Katie's Skills-HTML-CSS</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Welcome!</h1>
-        <p>Please fill out the form below to apply for a job!</p>
+        <div>
+            <h1>Welcome!</h1>
+        </div>
+        <div id="instructions">
+            <span>Please fill out the form below to apply for a job!</span>
+        </div>
 
         <form action="/application" method="POST">
             <div>
@@ -18,7 +23,7 @@
             </div>
             <div>
                 <label> Last Name
-                    <input type="text" name="last_name" placeholder="Last name">
+                    <input type="text" name="last_name" placeholder="Last name" id="lastname">
                 </label>
             </div>
             <div>
